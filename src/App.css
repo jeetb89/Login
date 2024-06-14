@@ -1,0 +1,349 @@
+:root {
+    --primary-color: #bf2031;
+    --secondary-color: #495057;
+    --background-light: #eff0f0;
+    --background-dark: #dfdfdf;
+    --error-color: #bf2100;
+    --input-background: #F6F3F3;
+    --button-background: #bf2031;
+  }
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .title, .subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .subtitle {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 3%;
+  }
+  
+  .react-tel-input .flag-dropdown {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    border: none;
+    border-radius: none;
+    background-color: var(--background-light);
+  }
+  
+  .react-tel-input .form-control {
+    border: none;
+    background-color: var(--background-light);
+  }
+  
+  .start {
+    box-sizing: border-box;
+    height: 6vh;
+    width: 30vw;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: aliceblue;
+    border: none;
+  }
+  
+  .register-form {
+    width: 50%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resend-btn {
+    border: none;
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .register-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .register-subtitle {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 5%;
+  }
+  
+  .error-message {
+    color: var(--error-color);
+    font-weight: 600;
+    margin-bottom: 2%;
+  }
+  
+  .phone-input .flag-dropdown .selected-flag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .phone-input .flag-dropdown .selected-flag .country-code {
+    margin-left: 5px;
+  }
+  
+  .phone-input .flag-dropdown .selected-flag .flag {
+    margin-right: 5px;
+  }
+  
+  .phone-input-container {
+    display: flex;
+    align-items: center;
+    margin: 5% 0%;
+    width: 80%;
+    border: none;
+  }
+  
+  .flag-container {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .flag-container img {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  
+  .phone-input-field {
+    margin: 10% 0%;
+    border: none;
+  }
+  
+  .continue-button {
+    background-color: var(--button-background);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .PhoneInputInput {
+    height: 5vh;
+    background-color: var(--input-background);
+    border: none;
+  }
+  
+  .PhoneInputCountry {
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .PhoneInput {
+    background-color: var(--background-dark);
+  }
+  
+  .otp-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+    font-family: sans-serif;
+  }
+  
+  .otp-title {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .otp-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+  }
+  
+  .otp-input {
+    width: 3vw;
+    height: 4vh;
+    margin: 0 1vh;
+    padding: 2vh;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    background-color: var(--background-dark);
+  }
+  
+  .otp-phone-number {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-top: 3%;
+  }
+  
+  .resend-otp {
+    margin-bottom: 20px;
+  }
+  
+  .submit-btn {
+    background-color: var(--button-background);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--error-color);
+  }
+  
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  .member-title {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .member-subtitle {
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+    font-family: sans-serif;
+    margin: 2%;
+    margin-bottom: 6%;
+  }
+  
+  .input-field {
+    justify-items: center;
+    height: 5vh;
+    width: 45%;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid transparent;
+    background-color: var(--background-light);
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .input-field:focus {
+    background-color: #F1FEFF;
+    border: 1px solid skyblue;
+  }
+  
+  .input-field:after {
+    border: 1px solid skyblue;
+  }
+  
+  .continue-sbmt-btn {
+    margin-top: 5%;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    background-color: var(--button-background);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .privacy-policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-light);
+    height:100vh;
+  }
+  
+  .policy-title {
+    margin-top: 2%;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .policy {
+    height: 70vh;
+    margin: 2%;
+    background-color: var(--background-dark);
+    box-sizing: border-box;
+    padding: 4%;
+    overflow-y: auto;
+  }
+  
+  .agree-btn {
+    width: 60vw;
+    height: 7vh;
+    font-weight: bold;
+    color: white;
+    background-color: var(--button-background);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .agree-btn:hover {
+    background-color: var(--error-color);
+  }
+  
+  .success-info {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  
+  .info {
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+    font-family: sans-serif;
+  }
+  
